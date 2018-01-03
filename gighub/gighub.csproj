@@ -229,6 +229,8 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="ViewModels\ValidateTime.cs" />
+    <Compile Include="ViewModels\FutureDate.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Gig.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />

@@ -17,7 +17,7 @@ namespace gighub.Controllers
         public ActionResult Create()
         {
             var viewModel = new GigFormViewModel();
-            viewModel.Genres = _context.Genres;
+            viewModel.Genres = _context.Genres.ToList();
             return View(viewModel);
         }
 
@@ -25,6 +25,12 @@ namespace gighub.Controllers
         [HttpPost]
         public ActionResult Create(GigFormViewModel viewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                viewModel.Genres = _context.Genres.ToList();
+                return View("Create", viewModel);
+            }
+                
             var artist = _context.Users.Where( u => u.Email == User.Identity.Name).First();
 
             var newGig = new Gig
@@ -32,7 +38,7 @@ namespace gighub.Controllers
                 Artist = artist,
                 GenreId = viewModel.Genre,
                 Venue = viewModel.Venue,
-                DateTime = viewModel.DateTime
+                DateTime = viewModel.GetDateTime()
             };
 
             _context.Gigs.Add(newGig);
