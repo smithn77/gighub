@@ -15,6 +15,15 @@ namespace gighub.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public virtual MyUserInfo MyUserInfo { get; set; }
+    }
+
+    public class MyUserInfo
+    {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 
 }

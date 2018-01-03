@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/gighub/App_Data/aspnet-gighub-20171230051756.mdf
+/gighub/App_Data/aspnet-gighub-20171230051756_log.ldf
+/gighub/obj/Debug
