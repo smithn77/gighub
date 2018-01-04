@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-size:17px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +23,84 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+/*Override bootsrap*/ 
+
+.navbar-inverse {
+  background-color: #ff4342;
+  border-color: #ff4342;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.form-group {
+     margin-bottom: 20px; 
+}
+
+.form-control {
+    font-size:20px;
+    padding:20px 15px;
+    border-radius:9px;
+}
+
+.form-control:focus {
+    border-color:#2196f3;
+    box-shadow:none;
+}
+
+.btn {
+    padding:7px 20px;
+    font-size:17px;
+    border-radius:9px;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #ff4342;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+.navbar-brand {
+    font-weight:700;
+}
+
+.dropdown-menu {
+    box-shadow:none;
+}
+

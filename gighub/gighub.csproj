@@ -227,6 +227,14 @@
     <Compile Include="Migrations\201801032141410_changeDataType.Designer.cs">
       <DependentUpon>201801032141410_changeDataType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801041517548_causeRunTimeError.cs" />
+    <Compile Include="Migrations\201801041517548_causeRunTimeError.Designer.cs">
+      <DependentUpon>201801041517548_causeRunTimeError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801041522315_causeRunTimeError1.cs" />
+    <Compile Include="Migrations\201801041522315_causeRunTimeError1.Designer.cs">
+      <DependentUpon>201801041522315_causeRunTimeError1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="ViewModels\ValidateTime.cs" />
@@ -329,6 +337,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801032141410_changeDataType.resx">
       <DependentUpon>201801032141410_changeDataType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801041517548_causeRunTimeError.resx">
+      <DependentUpon>201801041517548_causeRunTimeError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801041522315_causeRunTimeError1.resx">
+      <DependentUpon>201801041522315_causeRunTimeError1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
